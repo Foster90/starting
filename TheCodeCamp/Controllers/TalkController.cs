@@ -41,7 +41,7 @@ namespace TheCodeCamp.Controllers
         }
 
         [Route("{id:int}")]
-        public async Task<IHttpActionResult> Get(string moniker,int id, bool includeSpeakers)
+        public async Task<IHttpActionResult> Get(string moniker,int id, bool includeSpeakers = false)
         {
 
             try 
